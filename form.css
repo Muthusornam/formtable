@@ -1,0 +1,15 @@
+
+form{
+    
+    text-align: left;
+
+}
+
+table,tr,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+    
+}
+

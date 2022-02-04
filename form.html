@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+
+<body>
+    
+            <form  name="sub">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="50"></textarea><br>
+                <label for="pincode">Pincode:</label><br>
+                <input type="number" id="pincode" name="pincode"><br><br>
+                <label id="gender">Gender : </label>
+                <input type="radio" name="gender" id="male" value="male" > Male
+                <input type="radio" name="gender" id="female" value="female" > Female
+                <input type="radio" name="gender" id="others" value="others" > Others<br>
+
+                <label for="food" id="food">choice of food<br><span>(must choose at least 2 out of 5 options)</span>:</label>
+                <select data-placeholder="Begin typing a name to filter..." multiple class="chosen-select" name="test" id="selectbox">
+                    <option value="">Choice of food</option>
+                    <option value="Briyani">Briyani</option>
+                    <option value="Chapathi">Chapathi</option>
+                    <option value="Fish fry">Fish fry</option>
+                    <option value="Chicken 65">Chicken 65</option>
+                    <option value="Mutton chops">Mutton chops</option>
+
+                </select><br><br>
+
+                <label for="state">State:</label><br>
+                <input type="text" id="state" name="state"><br>
+                <label for="country">Country:</label><br>
+                <input type="text" id="country" name="country"><br><br><br>
+
+                <input type="button" id="submit" value="Submit" onclick="submitForm()">
+            </form>
+
+    <br><br><br>
+    
+        <table id="table">
+            <thead>
+                <tr>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Address</td>
+                    <td>Pincode</td>
+                    <td>Gender</td>
+                    <td>Food</td>
+                    <td>State</td>
+                    <td>Country</td>
+                </tr>
+            </thead>
+
+        </table>
+    
+
+</body>
+<script src="form.js"></script>
+
+</html>
